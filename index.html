@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Liberty Home Schooling</title>
-    <style>
-    	body, html {
-  height: 100%
-}
+  <title>Liberty Homeschooling</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: #001555;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23001555' cx='50' cy='0' r='50'/%3E%3Cg fill='%2305195d' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%230a1d64' cx='50' cy='100' r='50'/%3E%3Cg fill='%2310216c' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23152574' cx='50' cy='200' r='50'/%3E%3Cg fill='%231a297c' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%231f2d84' cx='50' cy='300' r='50'/%3E%3Cg fill='%2324328d' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23293695' cx='50' cy='400' r='50'/%3E%3Cg fill='%232d3b9d' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23323fa6' cx='50' cy='500' r='50'/%3E%3Cg fill='%233744ae' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%233b48b7' cx='50' cy='600' r='50'/%3E%3Cg fill='%23404dc0' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%234552c9' cx='50' cy='700' r='50'/%3E%3Cg fill='%234956d1' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%234e5bda' cx='50' cy='800' r='50'/%3E%3Cg fill='%235360e3' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%235765ed' cx='50' cy='900' r='50'/%3E%3Cg fill='%235c6af6' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23616fff' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+      background-attachment: fixed;
+      background-size: contain;
+    }
+    a {
+      color:red;
+    }
 
-body {
-  background-color: #001555;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23001555' cx='50' cy='0' r='50'/%3E%3Cg fill='%2305195d' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%230a1d64' cx='50' cy='100' r='50'/%3E%3Cg fill='%2310216c' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23152574' cx='50' cy='200' r='50'/%3E%3Cg fill='%231a297c' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%231f2d84' cx='50' cy='300' r='50'/%3E%3Cg fill='%2324328d' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23293695' cx='50' cy='400' r='50'/%3E%3Cg fill='%232d3b9d' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23323fa6' cx='50' cy='500' r='50'/%3E%3Cg fill='%233744ae' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%233b48b7' cx='50' cy='600' r='50'/%3E%3Cg fill='%23404dc0' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%234552c9' cx='50' cy='700' r='50'/%3E%3Cg fill='%234956d1' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%234e5bda' cx='50' cy='800' r='50'/%3E%3Cg fill='%235360e3' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%235765ed' cx='50' cy='900' r='50'/%3E%3Cg fill='%235c6af6' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23616fff' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: contain;
-}
-.img {
-  /* Background image */
-  /*background-image: url('./image0.jpeg');*/
-  /* Full-screen */
-  /* Center the background image */
-  /* Scale and zoom in the image */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-  height: auto;
-  max-width: 80%;
-  padding: 3em 0;
+    div.container {
+      max-width: 750px;
+    }
+    div.gallery {
+      border: 2px solid #bbb;
+      float: left;
+      background-color: #eee;
+    }
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
 
-}
-.small-img {
-  max-width: 200px;
-}
-.middle {
-  color: white;
-  /* Add a font */
-  font-family: "Courier New", Courier, monospace;
-  /* Set the font-size to 25 pixels */
-  font-size: 25px;
-  /*height: 100%;*/
-  text-align: center;
-  max-width: 80%;
-  padding-left: 10%;
-}
-a {
-  color:red;
-}
-/* Style the <hr> element */
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <div class="middle">
-    <h1>Hello! I am Michelle Thompson. </h1>
-    <hr>
-    <p>I am excited to help you succeed on your journey with homeschooling! Whether this is your first year or your tenth one, I can offer you tools, curriculum counseling, lesson planning, and educational philosophy development that will support and equip you to succeed. I also offer tutoring for TK-3rd Grade!</p>
-    <hr>
-    <p> If you would like to find out more, please check my <a href="https://www.facebook.com/groups/282500923018949"> facebook group</a> or email at <a href="mailto:wife4lyf@aol.com?subject=Liberty%20Homeschooling%20Inquiry">wife4lyf@aol.com</a>. Thanks!</p>
+  <nav class="sticky-top navbar navbar-light bg-light">
+    <a class="navbar-brand" href="https://www.facebook.com/groups/282500923018949">Liberty Homeschool Coaching</a>
+  </nav>
+
+  <div style="height:54px"></div>
+  <div class="container">
+    <div class="gallery mb-5">
+      <img src="fb_background.jpg">
+      <!-- <div class="desc">Add a description of the image here</div> -->
+    </div>
+
+    <div class="card text-center mb-5">
+      <div class="card-header">
+        <h3 class="card-title">Hello! I am Michelle Thompson <span class="text-muted text-small" style="font-size:14px">(pictured below)</span></h3>
+      </div>
+      <div class="card-body">
+        <p class="card-text" style="color:#54539A">
+          I am excited to help you succeed on your journey with homeschooling! Whether this is your first year or your tenth one, I can offer you tools, curriculum counseling, lesson planning, and educational philosophy development that will support and equip you to succeed. I also offer tutoring for TK-3rd Grade!
+        </p>
+      </div>
+      <div class="card-footer">        
+        <p> 
+          If you would like to find out more, please check my <a href="https://www.facebook.com/groups/282500923018949"> facebook group</a> or email at <a href="mailto:wife4lyf@aol.com?subject=Liberty%20Homeschooling%20Inquiry">wife4lyf@aol.com</a>. Thanks!
+        </p>
+      </div>
+    </div>
+    <div class="gallery mb-5">
+      <img src="michelle_portrait.jpeg">
+      <!-- <div class="desc">Add a description of the image here</div> -->
+    </div>
   </div>
-  <img src="./image0.jpeg" class="img">
-  <img src="./image1.jpeg" class="img small-img">
-  <img src="./image2.jpeg" class="img small-img">
-<!-- <div class="bgimg"></div> -->
- </div>
-<!-- <div class="bgimg3"></div> -->
-<!-- <div class="bgimg2"></div> -->
 </body>
 </html>
 
